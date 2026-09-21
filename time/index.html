@@ -117,6 +117,19 @@
     margin: 2.5rem 0 0;
   }
 
+  .back {
+    text-align: center;
+    margin: 1.75rem 0 0;
+  }
+  .back a {
+    color: var(--sepia);
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.15rem;
+  }
+  .back a:hover { color: var(--ink); border-color: var(--ink); }
+
   /* ---------- Phone ---------- */
   @media (max-width: 480px) {
     body { padding: 2rem 1.15rem 3rem; font-size: 17px; }
@@ -133,6 +146,7 @@
   @media print {
     body { background: #fff; padding: 0; font-size: 12pt; }
     .day { page-break-inside: avoid; }
+    .back { display: none; }
   }
 </style>
 </head>
@@ -237,6 +251,8 @@
   </section>
 
   <p class="note">Each session runs 45 minutes.</p>
+
+  <p class="back"><a href="../">&larr; Conference home</a></p>
 
 </main>
 
